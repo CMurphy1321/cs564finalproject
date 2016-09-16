@@ -25,6 +25,7 @@ add-apt-repository ppa:webupd8team/sublime-text-3
 apt-get update
 
 # Code Modification
+apt-get install -y tree
 apt-get install -y git
 apt-get install -y sublime-text-installer
 apt-get install -y vim
