@@ -23,6 +23,7 @@ add-apt-repository ppa:webupd8team/sublime-text-3
 
 # Now update whatever we can
 apt-get update
+apt-get upgrade
 
 # Code Modification
 apt-get install -y tree
