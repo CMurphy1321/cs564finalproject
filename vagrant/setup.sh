@@ -33,6 +33,7 @@ apt-get install -y vim
 
 # screen for multi buffer work
 apt-get install -y screen
+apt-get install cmake build-essential
 
 # Python
 apt-get install -y python3 python3-pip python-dev 
