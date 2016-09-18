@@ -70,7 +70,7 @@ su - vagrant -c "mkdir /home/vagrant/Documents/git"
 # python3 setup.py install
 
 # final project
-su - vagrant -c "git clone https://github.com/CMurphy1321/cs564finalproject.git"
+git clone https://github.com/CMurphy1321/cs564finalproject.git /home/vagrant/cs564finalproject
 
 # db setup
 apt-get install -y postgresql-9.5
