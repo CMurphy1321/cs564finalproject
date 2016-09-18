@@ -9,9 +9,11 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "box-cutter/ubuntu1404-desktop"
+  config.vm.hostname = "cs564finalproject"
 
   config.vm.provider "virtualbox" do |vb|
       vb.gui = true
+      vb.name = "cs564finalproject"
 
       vb.memory = "4096"
       vb.cpus = 2
