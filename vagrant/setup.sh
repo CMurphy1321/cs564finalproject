@@ -52,9 +52,9 @@ ln -s /vagrant /home/vagrant/vagrant # symlink
 
 ## Okay now let's get the actual server setup ready...
 # Virtual Environment
-pip3 install virtualenv
+# pip3 install virtualenv
 pip3 install psycopg2
-virtualenv /opt/poolgresenv
+# virtualenv /opt/poolgresenv
 
 # Django
 pip3 install django django-simple-history
