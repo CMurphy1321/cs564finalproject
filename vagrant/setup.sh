@@ -18,8 +18,8 @@ then
   exit
 fi
 
-## For Me. ST3 to edit anything I don't want to use vim for.
-add-apt-repository ppa:webupd8team/sublime-text-3
+# sublime text
+# add-apt-repository ppa:webupd8team/sublime-text-3
 
 # Now update whatever we can
 apt-get update
@@ -28,7 +28,7 @@ apt-get upgrade
 # Code Modification
 apt-get install -y tree
 apt-get install -y git
-apt-get install -y sublime-text-installer
+# apt-get install -y sublime-text-installer
 apt-get install -y vim
 
 # screen for multi buffer work
