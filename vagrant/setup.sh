@@ -57,7 +57,7 @@ pip3 install psycopg2
 # virtualenv /opt/poolgresenv
 
 # Django
-pip3 install django django-simple-history
+pip3 install django django-simple-history django-debug-toolbar
 
 # git repos
 su - vagrant -c "mkdir /home/vagrant/Documents/git"
