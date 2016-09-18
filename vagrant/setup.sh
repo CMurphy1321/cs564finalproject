@@ -58,8 +58,7 @@ pip3 install django django-simple-history
 
 # git repos
 su - vagrant -c "mkdir /home/vagrant/Documents/git"
-su - vagrant -c "mkdir /home/vagrant/Documents/git/django-json-rpc"
-su - vagrant -c "mkdir /home/vagrant/Documents/git/noctis"
+# su - vagrant -c "mkdir /home/vagrant/Documents/git/django-json-rpc"
 
 # not sure if we need django-rpc
 # su - vagrant -c "git clone git://github.com/samuraisam/django-json-rpc.git /home/vagrant/Documents/git/django-json-rpc"
