@@ -20,6 +20,9 @@ fi
 
 # sublime text
 # add-apt-repository ppa:webupd8team/sublime-text-3
+echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main 9.5" > /etc/apt/sources.list.d/postgreql.list
+
+wget --quiet -O - http://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
 # Now update whatever we can
 apt-get update
@@ -70,8 +73,10 @@ su - vagrant -c "mkdir /home/vagrant/Documents/git"
 su - vagrant -c "git clone https://github.com/CMurphy1321/cs564finalproject.git"
 
 # db setup
+apt-get install -y postgresql-9.5
 su - postgres -c "createdb cs564finalproject"
 su - postgres -c "psql -d cs564finalproject -c \"create user vagrant with password 'vagrant123'\""
+service postgresql restart
 
 ## And Finally finish up!
 date > "$PROVISIONED_ON"
