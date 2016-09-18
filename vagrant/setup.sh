@@ -67,15 +67,12 @@ su - vagrant -c "mkdir /home/vagrant/Documents/git"
 # python3 setup.py install
 
 # final project
-su - vagrant -c "git clone bitbucket.org:CMurphy1321/cs564finalproject.git"
+su - vagrant -c "git clone https://github.com/CMurphy1321/cs564finalproject.git"
+
+# db setup
+su - postgres -c "createdb cs564finalproject"
+su - postgres -c "psql -d cs564finalproject -c \"create user vagrant with password 'vagrant123'\""
 
 ## And Finally finish up!
 date > "$PROVISIONED_ON"
-echo ""
-echo "------------------------------------------------------------------------------------------------"
-echo "Completed setting up VM for initial django work. The next step is linking it with your database."
-echo "You can by all means change your config to use sqlite3 if you want to avoid the postgresql setup."
-echo "To make those changes go to ~/Documents/git/noctis/noctis/noctis/settings.py"
-echo "When using the runserver command you'll want to set the ip/port to 0.0.0.0:9878 if using defaults."
-echo "------------------------------------------------------------------------------------------------"
-echo ""
+echo "All finished!"
